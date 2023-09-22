@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bodyHome{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  
+  user-select: none;
+}
+.contentTitle{
+  width: 100%;
+  height: 300px;
+  
+  background-image: url("./Images/fondo.jpg");
+  background-attachment: fixed;
+  display: flex;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.contentTitle h1{
+  font-size: 130px;
+  color: #f1f1f1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade una sombra al texto */
+  
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.contentParrafo{
+  width: 100%;
+  height: auto;
+  background-color: rgb(199, 199, 199);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.contentParrafo p {
+  width: 70%;
+  text-align: justify;
+}
+.contentParrafo h1 {
+  font-size: 20px;
+  color: rgb(36, 36, 36);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contentMenu{
+  width: 100vw;
+  height: auto;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: 13rem;
+  height: 13rem;
+  background-color: rgb(228, 228, 228);
+  margin: 10px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.card:hover{
+  background-color: rgb(199, 199, 199);
   }
-  to {
-    transform: rotate(360deg);
-  }
+.card:active{
+scale: 0.9;
+}
+
+.titleCard{
+  font-size: 20px;
+  color: rgb(36, 36, 36);
+}
+
+.icon{
+  width: 110px;
 }
